@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PricePulse El Salvador | Monitoreo e Inversión</title>
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="app-container">
-      <header class="app-header">
-        <div class="logo">
-          <span class="icon">📈</span>
-          <h1>PricePulse <span>SV</span></h1>
-        </div>
-        <nav class="main-nav">
-          <button class="nav-btn active" data-view="dashboard">Dashboard</button>
-          <button class="nav-btn" data-view="canasta">Canasta Básica</button>
-          <button class="nav-btn" data-view="inversion">Hub Inversión</button>
-        </nav>
-        <div id="auth-section" style="margin-left:auto; padding-left:1rem;">
-          <button id="auth-btn" class="badge bank" style="cursor:pointer; border:none; padding:0.5rem 1rem; font-size: 0.85rem;">Conectar a Nube</button>
-        </div>
-      </header>
-      <main id="app-content"></main>
-    </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PricePulse El Salvador | PISTO</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <span class="icon">📈</span>
+        <h1>PricePulse <span>SV</span></h1>
+      </div>
+      <nav class="main-nav">
+        <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="inversion">Inversión</button>
+        <button class="nav-btn" data-view="b2b" style="color: var(--warning);">Empresas (DaaS)</button>
+        <button class="nav-btn" data-view="support">Soporte</button>
+      </nav>
+    </header>
+    <main id="app-content"></main>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
 </html>
